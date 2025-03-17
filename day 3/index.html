@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let user=prompt("Enter the units : ")
+        console.log("Enter the units : ",user)
+
+        if(user<=50){
+          let totalbill = (user * 0.50)
+        }
+        else if(user <= 150){
+            totalbill = (50 * 0.50) + ((user - 50) * 0.75)
+        }
+        else if(user <= 300){
+            totalbill =  (50 * 0.50) + (100 * 0.75) + ((user - 150) * 1.20 )
+        }
+        else{
+            totalbill =  (50 * 0.50) + (100 * 0.75) + (150 * 1.20) + ((user - 300) * 1.50)
+        }
+
+        totalbill += totalbill * 0.20//surcharge
+        
+        console.log("Total electricity bill is : ", totalbill)
+    </script>
+</body>
+</html>

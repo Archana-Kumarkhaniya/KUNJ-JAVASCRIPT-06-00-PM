@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //without using third variable
+        let a = prompt("Enter the value")
+        let b = prompt("Enter the value")
+
+        console.log("Before swapping A :", a)
+        console.log("Before swapping B :", b)
+
+        a = +a + +b
+        b = +a - +b
+        a = +a - +b
+
+        console.log("After swapping A :", a)
+        console.log("After swapping B :", b)
+
+    </script>
+</body>
+</html>

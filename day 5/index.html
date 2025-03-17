@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <style>
+        .main{
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            width: 100vw;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+        }
+         button{
+            border: 1px solid black;
+            height: 70px;
+            width: 200px;
+            background-color: brown;
+        }
+    </style>
+  </head>
+  <body>
+    <!-- <div class="main h-[100vh] w-[100vw] flex items-center justify-center flex-col gap-[15px]" id="a1">
+        <button class="h-[60px] w-[250px] border border-[2px] color-[red] bg-[#AD46FF] text-[20px]" onclick="light()">Switch On</button>
+        <button class="h-[60px] w-[250px] border border-[2px] color-[red] bg-[#1B2939] text-[20px]">Switch Off</button>
+    </div> -->
+    <div class="main" id="a1">
+        <button onclick="light()" id="f1">Switch On</button>
+        <button onclick="off()" id="f2">Switch Off</button>
+    </div>
+    <script src ="script.js"></script>
+  </body>
+</html>

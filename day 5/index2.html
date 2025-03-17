@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <div class="main">
+    <div class="box" id="b"></div>
+    <div class="b1">
+    <button onclick="light()">Round</button>
+    <button onclick="off()">Squre</button>
+    </div>
+    </div>
+    <style>
+        .main{
+            display: flex;
+            flex-direction: column;          
+        }
+        .box{
+            height: 300px;
+            width: 300px;
+            border: 1px solid black;
+        }
+        .b1{
+            display: flex;
+            height: 100vh;
+            width: 100vw;
+            gap: 20px;
+            justify-content: center;
+            align-items: center; 
+        }
+        button{
+            border: 1px solid black;
+            height: 70px;
+            width: 200px;
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+    <script>
+function light(){
+    
+    let a = document.getElementById("b")
+    a.style.borderRadius = "50%"
+}
+function off(){
+    
+    let a = document.getElementById("b")
+    a.style.borderRadius = "0%"
+
+}
+    </script>
+</body>
+</html>
