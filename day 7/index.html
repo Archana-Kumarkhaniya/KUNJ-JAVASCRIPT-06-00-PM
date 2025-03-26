@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       ( function add(){//normal function//imediatly invoke function expression
+            let a = 10
+            let b = 45
+            console.log(a + b)
+        })()
+        //add()
+        function minus(){//nested function
+            console.log("Hello")
+            function a(){
+                let a = 50
+                let b = 37
+                console.log(a-b)
+            }
+            a()
+        }
+        minus()
+
+        let b = function(){//anonymas function
+            console.log("hiiiiiiiiii")
+        }
+       // console.log(b)
+        b()
+
+        let multi = () =>{//arrow function
+
+            console.log("Madhav's result day")
+        }
+        multi()//
+
+        // (let d = function(){    
+        //     let a = 56
+        //     let b = 8
+        //     console.log(a/b)
+        // })()
+    </script>
+</body>
+</html>

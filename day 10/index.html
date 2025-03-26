@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- icon -->
+  </head>
+  <body class="bg-[#C0F4F7] flex justify-center items-center h-[100vh] w-[100%] flex-col gap-[40px]">
+    <div class="maindiv h-[100px] w-[400px] rounded-[70px] bg-white flex">
+        <button class=" h-[inherit] w-[130px] rounded-l-[70px] bg-[#B973EE] flex items-center justify-center"><i class="ri-subtract-line text-[70px]" onclick="minus()"></i></button>
+        <div class="w-[140px] h-[inherit] flex justify-center items-center" id="counter"></div>
+        <button class="h-[inherit] w-[130px] rounded-r-[70px] bg-[#B973EE] flex items-center justify-center" onclick="plus()"><i class="ri-add-line text-[65px]"></i></button>
+    </div>
+    <button class="h-[55px] w-[170px] bg-[#F0AA1D] rounded-[10px] text-white text-[25px]" id="reset" onclick="reset()">Reset</button>
+    <script src="script.js"></script>
+  </body>
+</html>
