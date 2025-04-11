@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+body{
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-direction: column;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+input{
+    height: 50px;
+    width: 250px;
+    padding-left: 15px;
+}
+::placeholder{
+    font-size: 18px;
+}
+button{
+    height: 50px;
+    width: 170px;
+    font-size: 20px;
+    background-color: rgb(64, 169, 183);
+    border: none;
+}
+h1{
+    color: white;
+    font-size: 45px;
+}
+.output{
+    height: 100px;
+    width: 300px;
+    border: 4px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+span{
+    color: white;
+    font-size: 60px;
+    text-align: center;
+}
+.btns{
+    display: flex;
+    gap: 20px;
+}
+.btns button{
+    background-color: aqua;
+    width: 140px;
+
+}
+</style>
+<body>
+    <h1>STOP WATCH</h1>
+    <input type="text" id="i2" placeholder="Enter a Minute">
+    <button onclick="submit()">Click This</button>
+    <div class="output">
+        <span class="print">00 : 00</span>
+    </div>
+    <div class="btns">
+        <button onclick="Stop()">Stop</button>
+        <button>Start</button>
+        <button>Reset</button>
+    </div>
+    <script src="script2.js"></script>
+</body>
+</html>

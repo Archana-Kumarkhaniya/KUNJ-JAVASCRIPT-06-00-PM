@@ -19,6 +19,8 @@ myform.addEventListener("submit" ,function(e){
 })
 
 let form2 = document.getElementById("form2")
+console.log(form2);
+
 form2.addEventListener("submit",function(f){
     f.preventDefault
 
@@ -26,12 +28,12 @@ form2.addEventListener("submit",function(f){
 
     console.log(pw2);
     
-    // if(oldpass = pw2  ){
-    //     window.location.href = "index3.html"
-    // }
-    // else{
-    //     alert("Incorrect password!")
-    // }
+    if(oldpass = pw2  ){
+        window.location.href = "index3.html"
+    }
+    else{
+        alert("Incorrect password!")
+    }
 })
 
 

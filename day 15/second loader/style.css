@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #efb54a;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cup{
+    height: 160px;
+    width: 190px;
+    border: 6px solid white;
+    border-radius: 0px 0px 70px 70px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cup .handle{
+    height: 85px;
+    width: 55px;
+    border: 6px solid white;
+    position: absolute;
+    left: 179px;
+    top: 10px;
+    border-radius: 0px 25px 80px 0px;
+}
+.cup .coffee{
+    height: 137px;
+    width: 168px;
+    border: 3px solid black;
+    border-radius: 0px 0px 60px 60px;
+    background-color: #3f2009;
+    border: none;
+}
+@keyframes wave{
+    
+}

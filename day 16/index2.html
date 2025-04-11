@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .container{
+        height: 100vh;
+        width: 100%;
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    button{
+        height: 60px;
+        width: 250px;
+        font-size: 20px;
+        border: none;
+        background: linear-gradient();
+    }
+</style>
+<body>
+    <div class="container" id="bg">
+        <button onclick="start()">
+            Click this for Change BG
+        </button>
+    </div>
+    <script>
+      function start(){
+        let bg = document.getElementById("bg")
+        let r1 = Math.floor(Math.random() * 256)
+        let g1 = Math.floor(Math.random() * 256)
+        let b1 = Math.floor(Math.random() * 256)
+        let r2 = Math.floor(Math.random() * 256)
+        let g2 = Math.floor(Math.random() * 256)
+        let b2 = Math.floor(Math.random() * 256)
+
+        bg.style.background = `linear-gradient(to right ,rgb(${r1}, ${g1},${b1}),rgb(${r2},${g2},${b2}))`
+      }
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- jquery cdn -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- jquery cdn -->
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        /* align-items: end; */
+    }
+    input{
+        height: 50px;
+        width: 300px;
+        border: none;
+        padding-left: 15px;
+    }
+    button{
+        height: 60px;
+        width: 180px;
+        background-color: rgb(212, 154, 79);
+        border-radius: 10px;
+        font-size: 25px;
+        font-weight: 600;
+        border: none;
+    }
+    ::placeholder{
+        font-size: 20px;
+        color: rgb(78, 74, 74);
+    }
+    .error{
+        color: red;
+    }
+</style>
+<body>
+    <form id="myform">
+        <input type="text" name="name" placeholder="First name">
+        <input type="text" name="lname" placeholder="Last name">
+        <input type="email" name="Email" placeholder="Email id">
+        <input type="password" name="password" placeholder="Enter your Password">
+        <input type="password" name="Cpassword" placeholder="Confirm password">
+
+        <button>SUBMIT</button>
+    </form>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.21.0/jquery.validate.min.js" integrity="sha512-KFHXdr2oObHKI9w4Hv1XPKc898mE4kgYx58oqsc/JqqdLMDI4YjOLzom+EMlW8HFUd0QfjfAvxSL6sEq/a42fQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $(document).ready(function(){
+            $("#myform").validate({
+                rules : {
+                    name : {
+                        required : true,
+                        minlength : 4
+                    },
+                    lname : {
+                        required : true,
+                        minlength : 4
+                    },
+                    Email : {
+                        required : true,
+                        minlength : 12
+                    },
+                    password : {
+                        required : true,
+                        minlength : 8
+                    },
+                    Cpassword : {
+                        required : true,
+
+                    }
+
+
+
+                },
+                messages :{
+                    name : {
+                        required : "Please enter your  first name",
+                        minlength : "Name at least 4 characters"
+                    },
+                    lname : {
+                        required : "Please enter your last name",
+                        minlength : "Name at least 4 characters"
+                    },
+                    Email : {
+                        required : "Please enter your email",
+                        minlength : "Email at least 12 characters"
+                    },
+                    password : {
+                        required : "Please enter your password",
+                        minlength : "Password at least 8 characters"
+                    },
+
+
+                }
+            })
+        })
+    </script>
+</body>
+</html>
