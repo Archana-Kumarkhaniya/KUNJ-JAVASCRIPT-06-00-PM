@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="output">
+        <span id="i1"></span>
+    </div>
+    <script>
+        let output = document.getElementById("i1")  
+        let value = JSON.parse(localStorage.getItem("user1"))
+       
+       let FinalValues = Object.values(value)
+
+       output.innerText = FinalValues
+    </script>
+</body>
+</html>

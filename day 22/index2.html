@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    height: 350px;
+    width: 450px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;  
+    background-color: #132668; 
+    border-radius: 10px; 
+    gap: 30px; 
+}
+.output{
+    display: flex;
+    flex-direction: column;
+}
+span{
+    font-size: 30px;
+    color: aqua;
+}
+
+</style>
+<body>
+    <div class="box">
+        <div class="output">
+            <span id="name">Name : </span>
+            <span id="mail">Email : </span>
+        </div>
+    </div>
+    <script>
+        let n = document.getElementById("name")
+        let e = document.getElementById("mail")
+
+       let s =  localStorage.getItem("Name")
+       let t =  localStorage.getItem("Email")
+
+       n.innerText= "Name : " + s
+       e.innerText= "Email : " + t
+    </script>
+</body>
+</html>

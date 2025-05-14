@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background-color: #665AF5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mainbox{
+    width: 370px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 7px;
+}
+.mainbox h1{
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+}
+.mainbox p{
+    margin-top: 40px;
+    font-size: 18px;
+}
+.mainbox input{
+    height: 50px;
+    border: 1px solid #999;
+    border-radius: 5px;
+    width: 100%;
+    padding-left: 15px;
+    font-size: 17px;
+    outline: none;
+    margin-top: 8px;
+}
+.mainbox input:focus{
+    border: 2px solid #665AF5;
+}
+.currency{
+    display: flex; 
+    align-items: center;
+    /* flex-direction: column;  */
+     justify-content: space-between;
+}
+.selectbox{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+h5{
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+.icon{
+    font-size: 25px;
+    margin-top: 45px;
+    color: #665AF5;
+}
+select{
+    width: 120px;
+    height: 40px;
+    margin-top: 8px;
+    border-radius: 5px;
+}
+option{
+    margin-top: 10px;
+}
+.output{
+    font-size: 17px;
+    margin: 20px 0 30px;
+    height: 50px;
+    width: 100%;
+    background-color: rgb(202, 198, 198);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: rebeccapurple;
+    border-radius: 5px;
+}
+button{
+    height: 52px;
+    color: white;
+    background-color: #665AF5;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 500;
+}

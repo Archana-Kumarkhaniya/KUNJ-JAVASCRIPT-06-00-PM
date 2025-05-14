@@ -1,0 +1,182 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        height: 100vh;
+        width: 100%;
+        background-color: #F4F4F9;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .mainbox {
+        height: auto;
+        padding: 15px;
+        background-color: white;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        border-radius: 10px;
+        width: 350px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .addtask {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 39px;
+        width: 310px;
+        margin-top: 20px;
+    }
+
+    .addtask input {
+        height: inherit;
+        width: 233px;
+        border-radius: 5px;
+        padding-left: 10px;
+        border: 2.5px solid #dddddd;
+    }
+
+    .addtask button {
+        height: inherit;
+        width: 62px;
+        border-radius: 5px;
+        background-color: #4CAF50;
+        border: none;
+        font-size: 20px;
+        color: white;
+    }
+
+    .box {
+        height: 48px;
+        width: 310px;
+        background-color: rgb(233, 226, 226);
+        box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+        border-radius: 5px;
+        margin-top: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .box .part1,
+    .part2 {
+        height: inherit;
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: first baseline;
+        /* border: 1px solid black; */
+        padding-left: 10px;
+    }
+
+    .part1 h1 {
+        font-size: 18px;
+        font-weight: 500;
+        margin-left: 10px;
+    }
+
+    .box:hover {
+        transition: 0.3s;
+        background-color: rgb(214, 208, 208);
+    }
+
+    .part2 {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        padding-right: 10px;
+        gap: 10px;
+    }
+
+    .delete-btn,
+    .edit-btn {
+        border: none;
+        font-size: 18px;
+        background-color: #E9E2E2;
+    }
+
+     .accordion {
+        width: 310px;
+        height: auto;
+        /* padding: 15px; */
+        /* border: 2px solid black; */
+        margin-top: 20px;
+        border-radius: 7px;
+        /* overflow: hidden; */
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+        z-index: 2;
+    }
+
+    .header {
+        padding: 15px;
+        display: flex;
+        height: 50px;
+        justify-content: space-between;
+        align-items: center;
+        background: linear-gradient(90deg, #667eea, #764ba2);
+        color: #fff;
+        cursor: pointer;
+        transition: background 0.3s ease;
+        border-radius: 7px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .header:hover {
+        background: linear-gradient(90deg, #5a67d8, #6b46c1);
+    }
+
+    .content {
+        max-height: 0;
+        background: white;
+        font-size: 18px;   
+        transition: max-height 0.6s ease;
+        overflow: hidden;    
+    }
+    .content p input{
+
+        margin-right: 10px;
+    }
+    p{
+        width: 310px;
+        height: 40px;
+        /* border: 1px solid black; */
+        /* text-align: center; */
+        padding-top: 10px;
+        padding-left: 15px;
+        border-bottom: 2px solid grey;
+        color: black;
+    }
+    .accordion.active .content{
+        max-height: 200px;
+    }
+    .accordion-icon{
+        transition: transform 0.3s ease;
+    }
+    .accordion.active .accordion-icon{
+        transform: rotate(90deg);
+    } 
+    .store{
+        margin-top: 20px
+    }
+    label{
+        font-size: 25px;
+    }
+    option{
+        height: 50px;
+        width: 200px;
+    }
+    select{
+        height: 35px;
+        font-size: 15px;
+        width: 150px;
+    }

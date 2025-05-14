@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Beautiful Registration Form</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .form-wrapper {
+      background-color: #fff;
+      padding: 40px 30px;
+      border-radius: 20px;
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 400px;
+      transition: 0.3s ease-in-out;
+    }
+
+    .form-wrapper h2 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 30px;
+      font-size: 28px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 600;
+      color: #555;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 12px 15px;
+      border: 2px solid #e0e0e0;
+      border-radius: 10px;
+      font-size: 16px;
+      transition: 0.3s;
+    }
+
+    .form-group input:focus {
+      border-color: #667eea;
+      outline: none;
+      box-shadow: 0 0 5px rgba(102, 126, 234, 0.5);
+    }
+
+    .form-group button {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      color: #fff;
+      font-size: 16px;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .form-group button:hover {
+      background: linear-gradient(135deg, #5a67d8, #6b46c1);
+    }
+
+    @media (max-width: 480px) {
+      .form-wrapper {
+        padding: 30px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-wrapper">
+    <h2>Register Now</h2>
+    <form id="myform">
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="John Doe" required />
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="john@example.com" required />
+      </div>
+
+      <div class="form-group">
+        <label for="number">Phone Number</label>
+        <input type="tel" id="number" name="number" placeholder="1234567890" pattern="[0-9]{10}" required />
+      </div>
+
+      <div class="form-group">
+        <label for="city">City</label>
+        <input type="text" id="city" name="city" placeholder="New York" required />
+      </div>
+
+      <div class="form-group">
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+
+</body>
+<script src="script.js"></script>
+</html>

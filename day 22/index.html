@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    }
+    .main{
+        height: 350px;
+        width: 450px;
+        border: 1px solid black;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;  
+        background-color: #132668; 
+        border-radius: 10px; 
+        gap: 30px; 
+    }
+    h1{
+        font-size: 40px;
+        color: white;
+        font-weight: 400;
+        /* padding-block: ; */
+    }
+    input ,button{
+        height: 45px;
+        width: 380px;
+        border-radius: 9px;
+        border: none;
+        outline: none;
+        padding-left: 20px;
+        background-color: #174084;
+        caret-color: white;
+    }
+    #btn{
+        background-color: #2BDBC6;
+        font-size: 20px;
+        color: #132668;
+        font-weight: 600;
+    }
+    ::placeholder{
+        color: white;
+        font-size: 17px;
+    }
+
+</style>
+<body>
+    <div class="main">
+        <h1>Welcome!</h1>
+        <input type="text" name="Fname" placeholder="Full Name*" id="i1">
+        <input type="email" name="Email" placeholder="Enter your email*" id="i2">
+        <button id="btn" onclick="submit()">Next</button>
+    </div>
+
+    <script>
+
+        function submit(){      
+        let input = document.getElementById("i1").value
+        let input2 = document.getElementById("i2").value
+
+        console.log(input);
+        console.log(input2);
+
+        localStorage.setItem("Name" , input)   
+        localStorage.setItem("Email" , input2)   
+            window.location.href ="index2.html"
+        }
+    </script>
+</body>
+</html>

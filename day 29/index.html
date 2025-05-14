@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/3.0.5/js.cookie.min.js" integrity="sha512-nlp9/l96/EpjYBx7EP7pGASVXNe80hGhYAUrjeXnu/fyF5Py0/RXav4BBNs7n5Hx1WFhOEOWSAVjGeC3oKxDVQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="mainbox">
+        <h1> 📝 To-Do List</h1>
+
+        <!-- <div class="accordion" id="accordion">
+            <div class="header">
+                <span>Storage Options</span>
+                <span class="accordion-icon">▶</span>
+            </div>
+            <div class="content">
+                <p class="local"><input type="radio" name="storage" id="l1" >Local Storage</p>
+                <p class="session"><input type="radio" name="storage">Session Storage</p>
+                <p class="cookie"><input type="radio" name="storage">Cookies</p>
+            </div>
+
+        </div> -->
+
+
+        <div class="addtask">
+            <input type="text" placeholder="Add a new task..." id="input" required>
+            <button onclick="addtask()">+</button>
+        </div>
+        <div class="store">
+            <label for="Storage">Storage : </label>
+            <select  id="storagetype">
+                <option value="local">Local Storage</option>
+                <option value="session">Session Storage</option>
+                <option value="cookie">Cookies</option>
+            </select>
+        </div>
+
+
+
+
+        <!-- <div class="box"></div> -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
